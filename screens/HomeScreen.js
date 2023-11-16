@@ -31,7 +31,6 @@ export default function HomeScreen() {
       }>
         {/* categories */}
         <Categories/>
-      </ScrollView>
       {/* featured */}
       <View className="mt-5">
         {
@@ -43,6 +42,7 @@ export default function HomeScreen() {
         }
 
       </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }
