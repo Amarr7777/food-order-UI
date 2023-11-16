@@ -16,7 +16,7 @@ export default function OrderPreparingScreen() {
     <View className = "flex-1 items-center justify-center">
         <StatusBar barStyle='dark'/>
         <Image source={require('../assets/images/delivery.gif')}
-        className = "h-50 w-50"
+        className = "h-48 w-48"
         />
     </View>
   )

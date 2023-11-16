@@ -5,15 +5,16 @@ import * as Icon from "react-native-feather"
 import DishRow from '../components/DishRow'
 import CartIcon from '../components/CartIcon'
 import { StatusBar } from 'expo-status-bar'
-import { useDispatch } from 'react-redux'
-import { setRestaurent } from '../slices/restaurantSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectRestaurant, setRestaurent } from '../slices/restaurantSlice'
 
 
 export default function RestrautentScreen() {
   const { params } = useRoute()
   let item = params;
 
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+  const resturant = useSelector(selectRestaurant);
   const dispatch = useDispatch()
   // console.log(item);
   useEffect(()=>{
